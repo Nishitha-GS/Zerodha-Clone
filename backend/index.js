@@ -303,7 +303,10 @@ app.post("/sellOrder", async(req, res)=>{
 
 app.use(
     cors({
-        origin:["http://localhost:3000"],
+        origin:[
+        "https://main.d9q62r38qdxoy.amplifyapp.com/",
+        "https://main.d3su6xr60u9g8t.amplifyapp.com/"
+    ],
         methods:["GET", "PUT", "POST", "DELETE"],
         credentials:true
     })
